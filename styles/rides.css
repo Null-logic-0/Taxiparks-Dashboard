@@ -1,0 +1,221 @@
+.drivers {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.drivers__wrapper {
+    max-width: 1066px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.drivers__types-list {
+    display: flex;
+    margin-bottom: 25px;
+    border-bottom: 1.5px solid rgba(16, 16, 16, 0.5);
+    gap: 7px;
+    overflow-x: scroll;
+}
+
+.drivers__types-list::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.drivers__types-list::-webkit-scrollbar-thumb {
+    background-color: #101010;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.drivers__types-list::-webkit-scrollbar-thumb:hover {
+    background-color: #101010bc;
+}
+
+.drivers__types-list li {
+    flex-shrink: 0;
+    color: #101010;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.drivers__types-list li.active {
+    color: #5459EA;
+    border-bottom: 2.5px solid #5459EA;
+}
+
+.drivers__table {
+    text-align: center;
+    max-width: 1066px;
+    width: 100%;
+    border-collapse: separate;
+    margin-bottom: 20px;
+}
+
+.drivers th {
+    color: #505470;
+    font-size: 12px;
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 16px 11px;
+    border-top: 1px solid #EFF0F4;
+    border-bottom: 1px solid #EFF0F4;
+    background: #F7F8FA;
+}
+
+.drivers th:first-child {
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    border-left: 1px solid #EFF0F4;
+}
+
+.drivers th:last-child {
+    border-radius: 0 8px 8px 0;
+    border-right: none;
+    border-right: 1px solid #EFF0F4;
+}
+
+.drivers td {
+    color: var(--black, #192A3E);
+    font-size: 10px;
+    font-weight: 500;
+    vertical-align: middle;
+    padding: 16px 11px;
+}
+
+.drivers td input[type="checkbox"],
+.drivers th input[type="checkbox"] {
+    accent-color: #101010;
+}
+
+.drivers td p {
+    max-width: 150px;
+    width: 100;
+    margin: 0 auto;
+}
+
+.drivers__profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.drivers__profile img {
+    border-radius: 50%;
+}
+
+.drivers__name {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.drivers__phone-number {
+    color: var(--Text-Color-Hint, #8F9BB3);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.drivers__income {
+    border-radius: 9px;
+    background: rgba(36, 193, 143, 0.10);
+    color: #24C18F;
+    font-size: 9px;
+    font-weight: 500;
+    max-width: 100px;
+    width: 100%;
+    min-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.drivers__phone-number:hover {
+    text-decoration: underline;
+}
+
+.drivers__table {
+    border-bottom: 1px solid #EFF0F4;
+}
+
+@media (max-width: 750px) {
+
+    .drivers__table tr th:nth-child(3),
+    .drivers__table tr td:nth-child(3),
+    .drivers__table tr th:nth-child(4),
+    .drivers__table tr td:nth-child(4),
+    .drivers__table tr th:nth-child(5),
+    .drivers__table tr td:nth-child(5),
+    .drivers__table tr th:nth-child(6),
+    .drivers__table tr td:nth-child(6) {
+        display: none;
+    }
+}
+
+.drivers__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.drivers__nav-text {
+    color: #232638;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.user-table__nav-options {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.drivers__nav-option {
+    color: #232638;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 1px solid #EFF0F4;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.drivers__nav-option.active {
+    background-color: #5459EA;
+    color: white;
+}
+
+.drivers__nav-option.disabled {
+    color: #C4C4C4;
+}
+
+.drivers__nav-option.active:hover {
+    background-color: #5459EA;
+}
+
+.drivers__nav-option:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+.drivers__nav-option:active {
+    background-color: rgb(229, 229, 229);
+}

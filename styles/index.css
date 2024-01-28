@@ -1,0 +1,114 @@
+body {
+    background-color: #101010;
+}
+
+.main-wrapper {
+    display: flex;
+    padding: 22px;
+}
+
+/* Font-styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-style {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+}
+
+.header-style {
+    margin-bottom: 20px;
+}
+
+.drivers__time {
+    border-radius: 9px;
+    padding: 3px 24px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--black, #192A3E);
+
+}
+
+.drivers__time-purple {
+    background-color: #5A60FF;
+
+}
+
+.drivers__time-red {
+    background-color: #FF2929;
+}
+
+.drivers___car-style {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.drivers__car-txt {
+    border-radius: 4px;
+    border: 1px solid #5459EA;
+    background-color: #fff;
+    padding: 10px 18px;
+    font-weight: 500;
+    color: #5459EA;
+    cursor: pointer;
+}
+
+.drivers__car-txt:hover {
+    background-color: #5459EA;
+    color: #fff;
+    transition: 1s;
+}
+
+.drivers__branches-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Live-map */
+.live-map iframe {
+    border-radius: 20px;
+    max-width: 1052px;
+    width: 100%;
+    box-shadow: 0px 12px 24px 0px rgba(0, 72, 217, 0.05), 0px 24px 60px 0px rgba(0, 72, 217, 0.05), 0px 2px 4px 0px rgba(0, 72, 217, 0.10);
+}
+
+.live-map {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+
+@media (max-width:600px) {
+    .live-map iframe {
+        width: 100%;
+        height: fit-content;
+
+    }
+}

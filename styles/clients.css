@@ -1,0 +1,128 @@
+
+.drivers-list__search-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.drivers-list__search-input {
+    position: relative;
+    max-width: fit-content;
+}
+
+.drivers-list__search {
+    background-color: #FFF;
+    border: 1px solid #F2ECFF;
+    filter: drop-shadow(0px 12px 24px rgba(0, 72, 217, 0.05));
+    width: 230px;
+    height: 48px;
+    border-radius: 30px;
+    padding: 16px 44px 16px 22px;
+    color: #9DA3BB;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.drivers-list__search::placeholder {
+    color: #9DA3BB;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.drivers-list__search-btn {
+    color: #9DA3BB;
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.drivers-list__search-btn:hover {
+    background-color: #10101017;
+}
+
+
+.drivers-list__search-btn:active {
+    background-color: #10101024;
+}
+
+
+
+.drivers-list__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.drivers-list__total {
+    color: #232638;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.drivers-list__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+.drivers-list__nav-text {
+    color: #232638;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.user-table__nav-options {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.drivers-list__nav-option {
+    color: #232638;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 1px solid #EFF0F4;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.drivers-list__nav-option.active {
+    background-color: #5459EA;
+    color: white;
+}
+
+.drivers-list__nav-option.disabled {
+    color: #C4C4C4;
+}
+
+.drivers-list__nav-option.active:hover {
+    background-color: #5459EA;
+}
+
+.drivers-list__nav-option:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+.drivers-list__nav-option:active {
+    background-color: rgb(229, 229, 229);
+}

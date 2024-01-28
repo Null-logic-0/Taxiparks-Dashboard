@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/icons/car-icon.svg" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+
+    <title>Taxiparks-Dashboard</title>
+</head>
+
+<body>
+    <main class="login">
+        <section class="login__section">
+            <div class="login__img" ></div>
+            <div class="login__form">
+                <div class="login__heading">
+                    <img src="./assets/icons/main-logo.svg" alt="main-logo" class="login__logo" />
+                    <h1 class="login__title">Log In to Admin Panel</h1>
+                    <p class="login__sub-title">
+                        Enter your phone number and password below
+                    </p>
+                </div>
+
+                <form action="./pages/dash.html" class="login__form">
+                    <div class="login__input-wrapper">
+                        <label for="number" class="login__input-label">PHONE NUMBER</label>
+                        <input type="number" name="number" id="number" placeholder="Enter your phone number"
+                            class="login__input" required />
+                    </div>
+
+                    <div class="login__input-wrapper">
+                        <label for="password" class="login__input-label">PASSWORD</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password"
+                            class="login__input" required />
+                    </div>
+
+                    <button type="submit" class="login__form-button">Log In</button>
+                </form>
+
+                <p class="login__txt">
+                    Don't have an account? <a href="#">Sing up</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

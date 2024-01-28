@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="../assets/icons/car-icon.svg" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/dash.css" />
+    <link rel="stylesheet" href="../styles/sidemenu.css" />
+    <link rel="stylesheet" href="../styles/rides.css"/>
+    <link rel="stylesheet" href="../styles/clients.css"/>
+    <script src="https://kit.fontawesome.com/2d3e948390.js" crossorigin="anonymous"></script>
+
+    <title>Taxiparks-Dashboard</title>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <aside id="sidebar" class="side-menu">
+            <div class="side-menu__profile">
+                <div class="side-menu__profile-pic">
+                    <img src="../assets/images/avatar-img-1.png" alt="profile-pic" class="side-menu__img" />
+                </div>
+                <div class="side-menu__profile-info">
+                    <p class="side-menu__profile-name">Samantha</p>
+                    <p class="side-menu__profile-number">+998 (99) 436-46-15</p>
+                </div>
+                <div class="side-menu__close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <nav class="side-menu__side-nav">
+                <p class="side-menu__nav-title"><span>MAIN</span> MENU</p>
+                <ul class="side-menu__nav-menu">
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/drivers.html">
+                            <i class="fa-solid fa-table"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/orders.html"><i class="fa-regular fa-newspaper"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/rides.html"><i class="fa-solid fa-user-clock"></i>
+                            Rides
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/clients.html"><i class="fa-solid fa-users"></i>
+                            Clients
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option active">
+                        <a href="../pages/drivers.html"><i class="fa-solid fa-user-tie"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/shift.html"><i class="fa-solid fa-dollar-sign"></i>
+                            Shift
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/live-map.html"><i class="fa-solid fa-globe"></i>
+                            Live map
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/car.html"><i class="fa-solid fa-car"></i>
+                            Car classes
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/branches.html"><i class="fa-solid fa-code-branch"></i>
+                            Branches
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/moderators.html"><i class="fa-solid fa-users-gear"></i>
+                            Moderators
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/settings.html"><i class="fa-solid fa-sliders"></i>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dash">
+            <section class="dash__header-section">
+                <div class="dash__header-left">
+                    <i class="fa-solid fa-bars" id="burgermenu"></i>
+                    <div class="dash__header-txt">
+                        <p class="dash__header-greeting">
+                            Good Morning, <span>M</span>aharram 👋
+                        </p>
+                        <p class="dash__header-messages">
+                            you have <a href="#">1 new message</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="dash__header-right">
+                    <a href="../index.html" class="dash__header-exit">
+                        <img src="../assets/icons/door-exit.svg" alt="door-exit-icon" class="dash__header-icon" />
+                    </a>
+                </div>
+            </section>
+            <section class="drivers">
+                <div class="drivers__wrapper">
+                    <div class="header-style">
+                        <form action="#" class="drivers-list__search-form">
+                            <label for="nameSearch" class="heading-style"> Drivers list </label>
+                            <div class="drivers-list__search-input">
+                                <input type="text" placeholder="Search by Name" id="nameSearch" name="nameSearch"
+                                    class="drivers-list__search" />
+                                <button type="submit" class="drivers-list__search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <table class="drivers__table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" />
+                                </th>
+                                <th>First name</th>
+                                <th>Last Name</th>
+                                <th>Birthdate</th>
+                                <th>State</th>
+                                <th>Home location</th>
+                                <th>Work location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                   <p class="drivers__name">Sierra</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Ferguson</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">9/5/1990</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Created</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">+998 (99) 436-46-15</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__time drivers__time-purple">some time ago</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                   <p class="drivers__name">Nathaniel</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Lawrence</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">6/5/1973</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Active</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">+998 (99) 436-46-15</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__time drivers__time-purple">1 months ago</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                   <p class="drivers__name">Alberto</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Daniels</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">11/4/1964</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Created</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">+998 (99) 436-46-15</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__time drivers__time-purple">3 days ago</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                   <p class="drivers__name">Mary</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Mills</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">11/3/1963</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Active</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">+998 (99) 436-46-15</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__time drivers__time-purple">some time ago</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                   <p class="drivers__name">Bessie</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Spencer</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">1/2/1949</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">Active</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__name">+998 (99) 436-46-15</p> 
+                                </td>
+                                <td>
+                                    <p class="drivers__time drivers__time-red ">2 weeks ago</p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    
+                    <div class="drivers-list__footer">
+                        <p class="drivers-list__total">Total users: 98</p>
+                        <div class="drivers-list__nav">
+                            <p class="drivers-list__nav-text">1-2 of items</p>
+                            <div class="user-table__nav-options">
+                                <div class="drivers-list__nav-option disabled">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="drivers-list__nav-option active">1</div>
+                                <div class="drivers-list__nav-option">2</div>
+                                <div class="drivers-list__nav-option">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </section>
+            
+            
+        
+        </main>
+    </div>
+    <script src="../scripts/burgermenu.js"></script>
+</body>
+</body>
+
+</html>

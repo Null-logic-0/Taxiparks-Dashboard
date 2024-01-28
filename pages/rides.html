@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="../assets/icons/car-icon.svg" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/dash.css" />
+    <link rel="stylesheet" href="../styles/sidemenu.css" />
+    <link rel="stylesheet" href="../styles/rides.css" />
+    <script src="https://kit.fontawesome.com/2d3e948390.js" crossorigin="anonymous"></script>
+
+    <title>Taxiparks-Dashboard</title>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <aside id="sidebar" class="side-menu">
+            <div class="side-menu__profile">
+                <div class="side-menu__profile-pic">
+                    <img src="../assets/images/avatar-img-1.png" alt="profile-pic" class="side-menu__img" />
+                </div>
+                <div class="side-menu__profile-info">
+                    <p class="side-menu__profile-name">Samantha</p>
+                    <p class="side-menu__profile-number">+998 (99) 436-46-15</p>
+                </div>
+                <div class="side-menu__close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <nav class="side-menu__side-nav">
+                <p class="side-menu__nav-title"><span>MAIN</span> MENU</p>
+                <ul class="side-menu__nav-menu">
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/dash.html">
+                            <i class="fa-solid fa-table"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/orders.html"><i class="fa-regular fa-newspaper"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option active">
+                        <a href="../pages/rides.html"><i class="fa-solid fa-user-clock"></i>
+                            Rides
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/clients.html"><i class="fa-solid fa-users"></i>
+                            Clients
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/drivers.html"><i class="fa-solid fa-user-tie"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/shift.html"><i class="fa-solid fa-dollar-sign"></i>
+                            Shift
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/live-map.html"><i class="fa-solid fa-globe"></i>
+                            Live map
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/car.html"><i class="fa-solid fa-car"></i>
+                            Car classes
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/branches.html"><i class="fa-solid fa-code-branch"></i>
+                            Branches
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/moderators.html"><i class="fa-solid fa-users-gear"></i>
+                            Moderators
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/settings.html"><i class="fa-solid fa-sliders"></i>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dash">
+            <section class="dash__header-section">
+                <div class="dash__header-left">
+                    <i class="fa-solid fa-bars" id="burgermenu"></i>
+                    <div class="dash__header-txt">
+                        <p class="dash__header-greeting">
+                            Good Morning, <span>M</span>aharram 👋
+                        </p>
+                        <p class="dash__header-messages">
+                            you have <a href="#">1 new message</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="dash__header-right">
+                    <a href="../index.html" class="dash__header-exit">
+                        <img src="../assets/icons/door-exit.svg" alt="door-exit-icon" class="dash__header-icon" />
+                    </a>
+                </div>
+            </section>
+
+
+            <section class="drivers">
+                <div class="drivers__wrapper">
+                    <div class="drivers__types">
+                        <ul class="drivers__types-list">
+                            <li class="active">
+                                Pending (5) <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>In progress (1) <i class="fa-solid fa-angle-right"></i></li>
+                            <li>Completed (70) <i class="fa-solid fa-angle-right"></i></li>
+                            <li>Upcoming (0) <i class="fa-solid fa-angle-right"></i></li>
+                            <li>
+                                Pre cancelled (26) <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                Cancelled by driver (1)
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>In progress (5)</li>
+                        </ul>
+                    </div>
+                    <table class="drivers__table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" />
+                                </th>
+                                <th>User</th>
+                                <th>Car Comfort</th>
+                                <th>Ordered Time</th>
+                                <th>Start Location</th>
+                                <th>Finish Location</th>
+                                <th>Income</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                    <div class="drivers__profile">
+                                        <img src="../assets/images/user-1.png" alt="profile-pic" />
+                                        <div class="drivers__profile-info">
+                                            <p class="drivers__name">Sierra Ferguson</p>
+                                            <a href="tel:+998994364615" class="drivers__phone-number">
+                                                +998 (99) 436-46-15</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>simple</td>
+                                <td>04.12.2021 20:30</td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p class="drivers__income">50 300 000 SUM</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                    <div class="drivers__profile">
+                                        <img src="../assets/images/drivers-2.png" alt="profile-pic" />
+                                        <div class="drivers__profile-info">
+                                            <p class="drivers__name">Sierra Ferguson</p>
+                                            <a href="tel:+998994364615" class="drivers__phone-number">
+                                                +998 (99) 436-46-15</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>simple</td>
+                                <td>04.12.2021 20:30</td>
+                                <td>
+                                    <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p class="drivers__income">300 000 SUM</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                    <div class="drivers__profile">
+                                        <img src="../assets/images/drivers-3.png" alt="profile-pic" />
+                                        <div class="drivers__profile-info">
+                                            <p class="drivers__name">Juan Steward</p>
+                                            <a href="tel:+998994364615" class="drivers__phone-number">
+                                                +998 (99) 436-46-15</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>simple</td>
+                                <td>04.12.2021 20:30</td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p class="drivers__income">50 300 000 SUM</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                    <div class="drivers__profile">
+                                        <img src="../assets/images/drivers-4.png" alt="profile-pic" />
+                                        <div class="drivers__profile-info">
+                                            <p class="drivers__name">Juan Steward</p>
+                                            <a href="tel:+998994364615" class="drivers__phone-number">
+                                                +998 (99) 436-46-15</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>simple</td>
+                                <td>04.12.2021 20:30</td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p class="drivers__income">50 300 000 SUM</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>
+                                    <div class="drivers__profile">
+                                        <img src="../assets/images/drivers-5.png" alt="profile-pic" />
+                                        <div class="drivers__profile-info">
+                                            <p class="drivers__name">Juan Steward</p>
+                                            <a href="tel:+998994364615" class="drivers__phone-number">
+                                                +998 (99) 436-46-15</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>simple</td>
+                                <td>04.12.2021 20:30</td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                                </td>
+                                <td>
+                                    <p class="drivers__income">50 300 000 SUM</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="drivers__nav">
+                        
+                        <div class="user-table__nav-options">
+                            <p class="drivers__nav-txt">1-2 of items</p>
+                            <div class="drivers__nav-option disabled">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="drivers__nav-option active">1</div>
+                            <div class="drivers__nav-option">2</div>
+                            <div class="drivers__nav-option">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+    </div>
+    <script src="../scripts/burgermenu.js"></script>
+</body>
+</body>
+
+</html>

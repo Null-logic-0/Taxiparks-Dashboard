@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="../assets/icons/car-icon.svg" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/dash.css" />
+    <link rel="stylesheet" href="../styles/sidemenu.css" />
+    <script src="https://kit.fontawesome.com/2d3e948390.js" crossorigin="anonymous"></script>
+
+    <title>Taxiparks-Dashboard</title>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <aside id="sidebar" class="side-menu">
+            <div class="side-menu__profile">
+                <div class="side-menu__profile-pic">
+                    <img src="../assets/images/avatar-img-1.png" alt="profile-pic" class="side-menu__img" />
+                </div>
+                <div class="side-menu__profile-info">
+                    <p class="side-menu__profile-name">Samantha</p>
+                    <p class="side-menu__profile-number">+998 (99) 436-46-15</p>
+                </div>
+                <div class="side-menu__close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <nav class="side-menu__side-nav">
+                <p class="side-menu__nav-title"><span>MAIN</span> MENU</p>
+                <ul class="side-menu__nav-menu">
+                    <li class="side-menu__nav-option active">
+                        <a href="../pages/dash.html">
+                            <i class="fa-solid fa-table"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/orders.html"><i class="fa-regular fa-newspaper"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/rides.html"><i class="fa-solid fa-user-clock"></i>
+                            Rides
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/clients.html"><i class="fa-solid fa-users"></i>
+                            Clients
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/drivers.html"><i class="fa-solid fa-user-tie"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/shift.html"><i class="fa-solid fa-dollar-sign"></i>
+                            Shift
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/live-map.html"><i class="fa-solid fa-globe"></i>
+                            Live map
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/car.html"><i class="fa-solid fa-car"></i>
+                            Car classes
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/branches.html"><i class="fa-solid fa-code-branch"></i>
+                            Branches
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/moderators.html"><i class="fa-solid fa-users-gear"></i>
+                            Moderators
+                        </a>
+                    </li>
+                    <li class="side-menu__nav-option">
+                        <a href="../pages/settings.html"><i class="fa-solid fa-sliders"></i>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dash">
+            <section class="dash__header-section">
+                <div class="dash__header-left">
+                    <i class="fa-solid fa-bars" id="burgermenu"></i>
+                    <div class="dash__header-txt">
+                        <p class="dash__header-greeting">
+                            Good Morning, <span>M</span>aharram 👋
+                        </p>
+                        <p class="dash__header-messages">
+                            you have <a href="#">1 new message</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="dash__header-right">
+                    <a href="../index.html" class="dash__header-exit">
+                        <img src="../assets/icons/door-exit.svg" alt="door-exit-icon" class="dash__header-icon" />
+                    </a>
+                </div>
+            </section>
+            <section class="knowledge-base-section">
+                <div class="knowledge-base">
+                    <h2 class="heading-style">Knowledge base</h2>
+                    <div class="knowledge-base__flolders">
+                        <div class="knowledge-base__item knowledge-base__item--blue">
+                            <img src="../assets/icons/folder-open-blue.svg" alt="folder-icon"
+                                class="kowledge-base__icon" />
+                            <p class="knowledge-base__txt">Total Orders</p>
+                            <button class="knowledge-base__btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="knowledge-base__item knowledge-base__item--red">
+                            <img src="../assets/icons/folder-open-red.svg" alt="folder-icon"
+                                class="kowledge-base__icon" />
+                            <p class="knowledge-base__txt">Total Earnings</p>
+                            <button class="knowledge-base__btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="knowledge-base__item knowledge-base__item--orange">
+                            <img src="../assets/icons/folder-open-orange.svg" alt="folder-icon"
+                                class="kowledge-base__icon" />
+                            <p class="knowledge-base__txt">Profitм</p>
+                            <button class="knowledge-base__btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="knowledge-base__statistic">
+                        <div class="knowledge-base__statistic-top">
+                            <h3 class="knowledge-base__statistic-title">Statistic</h3>
+                            <div class="knowledge-base__statistic-pages">
+                                <button class="knowledge-base__btn">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <span class="knowledge-base__statistic-txt">Aug 2021</span>
+                                <button class="knowledge-base__btn">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="knowledge-base__statistic-score">
+                            <p class="heading-style knowledge-base__statistic-score-title">
+                                Progress score
+                            </p>
+                            <div class="knowledge-base__statistic-score-info">
+                                <div class="knowledge-base__statistic-dot knowledge-base__statistic-dot--blue">
+                                </div>
+                                <span class="knowledge-base__statistic-txt">Average grade</span>
+                                <div class="knowledge-base__statistic-dot knowledge-base__statistic-dot--green">
+                                </div>
+                                <span class="knowledge-base__statistic-txt">Exams</span>
+                            </div>
+                            <img src="../assets/icons/statistic.svg" alt="statistic"
+                                class="knowledge-base__statistic-img" />
+
+                            <ul class="knowledge-base__list">
+                                <li class="knowledge-base__list-item">Jan</li>
+                                <li class="knowledge-base__list-item">Feb</li>
+                                <li class="knowledge-base__list-item">Apr</li>
+                                <li class="knowledge-base__list-item">Mar</li>
+                                <li class="knowledge-base__list-item">May</li>
+                                <li class="knowledge-base__list-item">Jun</li>
+                                <li class="knowledge-base__list-item">Jul</li>
+                                <li class="knowledge-base__list-item">Aug</li>
+                                <li class="knowledge-base__list-item">Sep</li>
+                                <li class="knowledge-base__list-item">Oct</li>
+                                <li class="knowledge-base__list-item">Nov</li>
+                                <li class="knowledge-base__list-item">Dec</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-drivers">
+                    <h2 class="heading-style">Top Drivers</h2>
+                    <div class="top-drivers__main-wrapper">
+                        <div class="top-drivers__card">
+                            <div class="top-driverrs__profile">
+                                <img src="../assets/images/drivers-1.png" alt="profile-pic" />
+                                <div class="top-drivers__profile-info">
+                                    <p class="top-drivers__name">Maharrm Hasanli</p>
+                                    <a href="+998 (99) 436-46-15" class="top-drivers__phone">
+                                        +998 (99) 436-46-15</a>
+                                </div>
+                            </div>
+                            <div class="top-drivers__earnings">
+                                <p class="top-drivers__orders">Orders: <span>5</span></p>
+                                <p class="top-drivers__income">Income: <span>$98</span></p>
+                            </div>
+                        </div>
+                        <div class="top-drivers__card">
+                            <div class="top-driverrs__profile">
+                                <img src="../assets/images/drivers-2.png" alt="profile-pic" />
+                                <div class="top-drivers__profile-info">
+                                    <p class="top-drivers__name">Gina Garza</p>
+                                    <a href="+998 (99) 158-10-15" class="top-drivers__phone">
+                                        +998 (99) 158-10-15</a>
+                                </div>
+                            </div>
+                            <div class="top-drivers__earnings">
+                                <p class="top-drivers__orders">Orders: <span>5</span></p>
+                                <p class="top-drivers__income">Income: <span>$98</span></p>
+                            </div>
+                        </div>
+                        <div class="top-drivers__card">
+                            <div class="top-driverrs__profile">
+                                <img src="../assets/images/drivers-3.png" alt="profile-pic" />
+                                <div class="top-drivers__profile-info">
+                                    <p class="top-drivers__name">Brian Reed</p>
+                                    <a href="tel:+998 (95) 489-46-20" class="top-drivers__phone">
+                                        +998 (95) 489-46-20</a>
+                                </div>
+                            </div>
+                            <div class="top-drivers__earnings">
+                                <p class="top-drivers__orders">Orders: <span>5</span></p>
+                                <p class="top-drivers__income">Income: <span>$23</span></p>
+                            </div>
+                        </div>
+                        <div class="top-drivers__card">
+                            <div class="top-driverrs__profile">
+                                <img src="../assets/images/drivers-4.png" alt="profile-pic" />
+                                <div class="top-drivers__profile-info">
+                                    <p class="top-drivers__name">Tammy Spencer</p>
+                                    <a href="tel:+998 (95) 785-10-02" class="top-drivers__phone">
+                                        +998 (95) 785-10-02</a>
+                                </div>
+                            </div>
+                            <div class="top-drivers__earnings">
+                                <p class="top-drivers__orders">Orders: <span>5</span></p>
+                                <p class="top-drivers__income">Income: <span>$98</span></p>
+                            </div>
+                        </div>
+                        <div class="top-drivers__card">
+                            <div class="top-driverrs__profile">
+                                <img src="../assets/images/drivers-5.png" alt="profile-pic" />
+                                <div class="top-drivers__profile-info">
+                                    <p class="top-drivers__name">Joseph Brooks</p>
+                                    <a href="tel:+998 (99) 436-46-15" class="top-drivers__phone">
+                                        +998 (99) 436-46-15</a>
+                                </div>
+                            </div>
+                            <div class="top-drivers__earnings">
+                                <p class="top-drivers__orders">Orders: <span>5</span></p>
+                                <p class="top-drivers__income">Income: <span>$98</span></p>
+                            </div>
+                        </div>
+                        <div class="top-drivers__card">
+                            <div class="top-driverrs__profile">
+                                <img src="../assets/images/drivers-6.png" alt="profile-pic" />
+                                <div class="top-drivers__profile-info">
+                                    <p class="top-drivers__name">Juan Steward</p>
+                                    <a href="tel:+998(99) 436-46-15" class="top-drivers__phone">
+                                        +998 (99) 436-46-15</a>
+                                </div>
+                            </div>
+                            <div class="top-drivers__earnings">
+                                <p class="top-drivers__orders">Orders: <span>5</span></p>
+                                <p class="top-drivers__income">Income: <span>$98</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="users-table">
+                <table class="users-table__wrapper">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" />
+                            </th>
+                            <th>User</th>
+                            <th>Car Comfort</th>
+                            <th>Ordered Time</th>
+                            <th>Start Location</th>
+                            <th>Finish Location</th>
+                            <th>Income</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                <div class="users-table__profile">
+                                    <img src="../assets/images/user-1.png" alt="profile-pic" />
+                                    <div class="users-table__profile-info">
+                                        <p class="users-table__name">Sierra Ferguson</p>
+                                        <a href="tel:+998994364615" class="users-table__phone">
+                                            +998 (99) 436-46-15</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>simple</td>
+                            <td>04.12.2021 20:30</td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p class="users-table__income">50 300 000 SUM</p>
+                            </td>
+            
+            
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                <div class="users-table__profile">
+                                    <img src="../assets/images/user-2.png" alt="profile-pic" />
+                                    <div class="users-table__profile-info">
+                                        <p class="users-table__name">Sierra Ferguson</p>
+                                        <a href="tel:+998994364615" class="users-table__phone">
+                                            +998 (99) 436-46-15</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>simple</td>
+                            <td>04.12.2021 20:30</td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p class="users-table__income">50 300 000 SUM</p>
+                            </td>
+            
+            
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                <div class="users-table__profile">
+                                    <img src="../assets/images/user-3.png" alt="profile-pic" />
+                                    <div class="users-table__profile-info">
+                                        <p class="users-table__name">Sierra Ferguson</p>
+                                        <a href="tel:+998994364615" class="users-table__phone">
+                                            +998 (99) 436-46-15</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>simple</td>
+                            <td>04.12.2021 20:30</td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p class="users-table__income">50 300 000 SUM</p>
+                            </td>
+            
+            
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                <div class="users-table__profile">
+                                    <img src="../assets/images/user-4.png" alt="profile-pic" />
+                                    <div class="users-table__profile-info">
+                                        <p class="users-table__name">Sierra Ferguson</p>
+                                        <a href="tel:+998994364615" class="users-table__phone">
+                                            +998 (99) 436-46-15</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>simple</td>
+                            <td>04.12.2021 20:30</td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p class="users-table__income">50 300 000 SUM</p>
+                            </td>
+            
+            
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                <div class="users-table__profile">
+                                    <img src="../assets/images/user-5.png" alt="profile-pic" />
+                                    <div class="users-table__profile-info">
+                                        <p class="users-table__name">Sierra Ferguson</p>
+                                        <a href="tel:+998994364615" class="users-table__phone">
+                                            +998 (99) 436-46-15</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>simple</td>
+                            <td>04.12.2021 20:30</td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                            </td>
+                            <td>
+                                <p class="users-table__income">50 300 000 SUM</p>
+                            </td>
+            
+            
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/burgermenu.js"></script>
+</body>
+</body>
+
+</html>
